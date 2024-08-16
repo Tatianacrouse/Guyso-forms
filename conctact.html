@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulaire de Contact Guyso</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <form action="https://formspree.io/tatianadjeutio@gmail.com" method="POST">
+      <h2>Guyso Formulaire</h2>
+      <div class="form-group">
+        <label for="nom">Nom:</label>
+        <input type="text" id="nom" name="nom" required>
+        <span class="error" id="nomError"></span>
+      </div>
+      <div class="form-group">
+        <label for="prenom">Prénom:</label>
+        <input type="text" id="prenom" name="prenom" required>
+        <span class="error" id="prenomError"></span>
+      </div>
+      <div class="form-group">
+        <label for="pays">Pays:</label>
+        <input type="text" id="pays" name="pays" required>
+        <span class="error" id="paysError"></span>
+      </div>
+      <div class="form-group">
+        <label for="ville">Ville:</label>
+        <input type="text" id="ville" name="ville" required>
+        <span class="error" id="villeError"></span>
+      </div>
+      <div class="form-group">
+        <label for="email">Adresse Email:</label>
+        <input type="email" id="email" name="_replyto" required>
+        <span class="error" id="emailError"></span>
+      </div>
+      <div class="form-group">
+        <label for="montant">Montant:</label>
+        <input type="number" id="montant" name="montant" required>
+        <span class="error" id="montantError"></span>
+      </div>
+      <div class="form-group">
+        <label for="gain">Gain:</label>
+        <textarea id="gain" name="gain"></textarea>
+        <span class="error" id="gainError"></span>
+      </div>
+      <button type="submit">Envoyer</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
